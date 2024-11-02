@@ -1,0 +1,101 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: #f0f0f0;
+    background: linear-gradient(135deg, #2c3e50, #4a6070);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 2em;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+#click-count,
+#keypress-count {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #e0e0e0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+button {
+    padding: 12px 25px;
+    margin: 10px;
+    font-size: 1em;
+    color: #ffffff;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #556cd6, #6b4fa5);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    transform: translateY(-2px);
+}
+
+button:active {
+    background: linear-gradient(135deg, #4a5eb2, #634391);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transform: translateY(1px);
+}
+
+#activity-list {
+    list-style-type: none;
+    padding: 0;
+    max-width: 700px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+#activity-list li {
+    background-color: #333a46;
+    margin: 10px 0;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#activity-list li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+#activity-list li:nth-child(odd) {
+    background-color: #2b323d;
+}
+
+#activity-list .activity-timestamp {
+    font-weight: bold;
+    color: #b0b0b0;
+    margin-right: 10px;
+    font-size: 0.9em;
+}
+
+#activity-list .activity-detail {
+    flex-grow: 1;
+    color: #d0d0d0;
+    font-size: 1em;
+}
+
+#activity-list .activity-icon {
+    font-size: 1.2em;
+    margin-right: 10px;
+    color: #667eea;
+}

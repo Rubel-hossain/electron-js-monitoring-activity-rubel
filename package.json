@@ -1,0 +1,23 @@
+{
+  "name": "electron_activity_monitoring_by_rubel",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager . electron_activity_monitoring_by_rubel --platform=win32 --arch=x64 --out=build --overwrite",
+    "watch": "electronmon ."
+  },
+  "dependencies": {
+    "active-win": "^8.2.1",
+    "chart.js": "^4.4.6",
+    "electron": "^33.0.2",
+    "electron_activity_monitoring_by_rubel": "file:",
+    "electron-localshortcut": "^3.2.1",
+    "electron-store": "^10.0.0",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "electron-packager": "^17.1.1",
+    "electronmon": "^1.0.7"
+  }
+}
